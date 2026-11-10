@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 AWS_SECRET_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"
-
+DB_PASSWORD = "supersecretpassword123!"
 @app.get("/")
 def health_check():
     return {"status": "healthy", "service": "target-api"}
